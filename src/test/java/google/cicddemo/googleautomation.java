@@ -16,7 +16,7 @@ public static void launch() throws InterruptedException
 		// TODO Auto-generated method stub
 		WebDriverManager.firefoxdriver().setup();
 		WebDriver driver =new FirefoxDriver();
-		driver.get("https://.cm/");
+		driver.get("https://www.google.co.in/");
 		driver.manage().window().maximize();
 		Thread.sleep(2000);
 				
