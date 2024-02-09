@@ -25,9 +25,11 @@ public static void launch() throws InterruptedException
  
 	System.out.println("hi");		
 	
-    	WebDriverManager.chromedriver().setup();
-	ChromeOptions options = new ChromeOptions();
-	WebDriver driver = new ChromeDriver(options);
+    	System.setProperty(
+            "webdriver.chrome.driver",
+            "C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ubuntu");
+        
+        WebDriver driver = new ChromeDriver();
 	
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
