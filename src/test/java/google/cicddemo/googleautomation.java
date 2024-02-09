@@ -32,6 +32,6 @@ public static void launch() throws InterruptedException
     driver.get("https://www.google.com/");
     System.out.println("hi");
     System.out.println(driver.getTitle());
-    System.out.println("hi2);	
+    System.out.println("hi2");	
 }	
 }
