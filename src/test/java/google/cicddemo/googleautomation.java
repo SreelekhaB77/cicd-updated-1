@@ -25,7 +25,7 @@ public static void launch() throws InterruptedException
  
 	System.out.println("hi");		
 	
-    	System.setProperty("webdriver.chrome.driver","C:\Users\Admin\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Ubuntu");
+    	System.setProperty("webdriver.chrome.driver","C:\\Users\\Admin\\AppData\\Roaming\\Microsoft\\Windows\\Start Menu\\Programs\\Ubuntu");
            
         
         WebDriver driver = new ChromeDriver();
