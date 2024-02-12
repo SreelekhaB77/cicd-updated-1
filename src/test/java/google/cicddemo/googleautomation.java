@@ -25,9 +25,9 @@ public static void launch() throws InterruptedException
  
 	System.out.println("hi");		
 	
-    	System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/usr/local/bin/chromedriver-linux64");
+    	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/usr/local/bin/chromedriver-linux64");
            
-        
+       WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
 	
     driver.manage().window().maximize();
