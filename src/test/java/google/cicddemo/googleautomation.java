@@ -27,13 +27,13 @@ public static void launch() throws InterruptedException
 	
     	//System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/usr/local/bin/chromedriver-linux64");
            
-	WebDriverManager.edgedriver().setup();
-	EdgeDriver edgeDriver = new EdgeDriver();
+	WebDriverManager.firefoxdriver().setup();
+	WebDriver driver = new FirefoxDriver();
 
 	
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-    edgeDriver.get("http://www.google.de");
+    edgeDriver.get("http://www.google.com");
     System.out.println("hi");
     System.out.println(driver.getTitle());
     System.out.println("hi2");	
