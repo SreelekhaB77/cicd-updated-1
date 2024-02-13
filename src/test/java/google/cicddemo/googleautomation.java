@@ -33,7 +33,7 @@ public static void launch() throws InterruptedException
 	
     driver.manage().window().maximize();
     driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
-    edgeDriver.get("http://www.google.com");
+    driver.get("http://www.google.com");
     System.out.println("hi");
     System.out.println(driver.getTitle());
     System.out.println("hi2");	
